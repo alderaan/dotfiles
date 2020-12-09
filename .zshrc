@@ -120,3 +120,5 @@ export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 export PATH="/usr/local/opt/python@3.8/bin:$PATH"
 alias python=python3
 alias pip=pip3
+setopt PROMPT_SUBST
+PROMPT='%{$(pwd|grep --color=always /)%${#PWD}G%} %(!.%F{red}.%F{cyan})%n%f@%F{yellow}%m%f%(!.%F{red}.)%#%f '
